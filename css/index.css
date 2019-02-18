@@ -71,7 +71,7 @@ a{
 }
 .select{
     border: 2px solid #c36b81;
-    padding: 2px 11px 2px 11px ;/*ÉÏ£¬ÓÒ£¬ÏÂ£¬×ó*/
+    padding: 2px 11px 2px 11px ;/*ï¿½Ï£ï¿½ï¿½Ò£ï¿½ï¿½Â£ï¿½ï¿½ï¿½*/
 }
 .index-middle-picture{
     position: absolute;
@@ -637,4 +637,16 @@ float: left;
     width: 150px;
     height: 40px;
     line-height: 40px;
+}
+.bleft{
+    float: left;
+    width: 50%;
+    height: auto;
+
+}
+.bright{
+    float: left;
+    width: 50%;
+    height: auto;
+
 }

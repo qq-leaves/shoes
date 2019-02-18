@@ -4,7 +4,30 @@
     <meta charset="UTF-8">
     <title>某某女鞋高端定制</title>
     <link rel="stylesheet" href="css/index.css"/>
-    <script src="js/index.js"></script>
+    <script>
+        var times;
+        var count = 0;
+        window.onload = function () {
+            var ullist = document.getElementsByClassName('ullist')[0];
+            var box = document.getElementsByClassName('box')[0];
+            times = setInterval(function () {
+                imgbo();
+            }, 2000);
+            function imgbo() {
+                ullist.className = 'ullist b';
+                count++;
+                ullist.style.marginLeft = (-84 * count) + 'rem';
+                setInterval(function () {
+                    if (count > ullist.children.length - 1) {
+                        ullist.className = 'ullist';
+                        count = 0;
+                        ullist.style.marginLeft = '0px';
+                    }
+                }, 1000)
+
+            }
+        }
+    </script>
 </head>
 <body>
 <div id="container">
@@ -37,112 +60,112 @@
     </div>
 
     <div class="index-middle2">
-      <div class="index-middle21">
-          <div class="index-middle21_left">
-              <div class="index-middle21_leftceng">
-                  <p style="font-size: 30px;margin-top: 30px">F A S H I O N &nbsp; S H O E S</p>
-                  <p>极致精美，简约而不简单</p>
-              </div>
-              <img style="width: 510px;height: 200px" src="imgs/imga_05_1utv.jpg">
-          </div>
-          <div class="index-middle21_right">
-              <div class="index-middle21-right1">
-                  <div class="middle_r21C"><p>优雅SHOES</p></div>
-                  <img src="imgs/fzb_05_60ik.png">
-              </div>
-              <div class="index-middle21-right2">
-                  <div class="middle_r21C"><p>淑女SHOES</p></div>
-                  <img src="imgs/fzb_03_wnf2.png">
-              </div>
-              <div class="index-middle21-right3">
-                  <div class="middle_r21C"><p>女王SHOES</p></div>
-                  <img src="imgs/fzb_07_zsig.jpg">
-              </div>
-          </div>
-      </div>
-       <div class="index-middle22">
-          <div class="index-middle22-1">
-              <div class="index-middle22-1left">
-                  <p>走进某某鞋冒有限公司</p>
-                  <p>INTO A CERTAIN SHOE INDUSTRY</p>
-                  <p>CERTAIN SHOES​</p>
-                  <div style="line-height:33px">鞋帽有限公司创办于年经过十年来的艰辛创业，现已拥有占地面
-                      积多平方米的厂房，并引进了全套具有国际先进水准的鞋业生产
-                      线我公司主要生产旅游鞋皮鞋鞋底鞋底橡塑鞋底等系列产品，产
-                      品远销东南亚、欧美等地。秉持质优、高效的经营原则，我们将
-                      继续不懈努力，为广大客 商和消费者提供更优质的服务。
-                    <div style="height: 15px"></div>
-                      鞋帽有限公司系中国皮革工业协会的重点骨干企业。现有员工多
-                      人，标准厂房平方米，日产高档男女皮鞋多双。连续五届获得中
-                      国真皮鞋王，年率先在行内获质量管理体系认证。自年起连获国
-                      家免检产品资格，年被国家商务部列为重点培育和发展的中国出
-                      口名牌。某某鞋业，极限风潮，简约而不简单。</div>
-              </div>
-              <div class="index-middle22-1right">
-              <div class="index-middle22-1rightT">
-                     <div class="EACH">
-                         <p>EACH PAIR IS THE</p>
-                             <p>MOST SPECIAL, JUST LIKE</p>
-                             <p>I CAN NOT BE</p>
-                             <p>REPLACED,</p>
-                         <p>I BELIEVE YOU WILL</p>
-                             <p>LIKE</p>
-                     </div>
-                     <div class="gongzhu">
-                         <p>每个女孩心中都住着一个公主，</p>
+        <div class="index-middle21">
+            <div class="index-middle21_left">
+                <div class="index-middle21_leftceng">
+                    <p style="font-size: 30px;margin-top: 30px">F A S H I O N &nbsp; S H O E S</p>
+                    <p>极致精美，简约而不简单</p>
+                </div>
+                <img style="width: 510px;height: 200px" src="imgs/imga_05_1utv.jpg">
+            </div>
+            <div class="index-middle21_right">
+                <div class="index-middle21-right1">
+                    <div class="middle_r21C"><p>优雅SHOES</p></div>
+                    <img src="imgs/fzb_05_60ik.png">
+                </div>
+                <div class="index-middle21-right2">
+                    <div class="middle_r21C"><p>淑女SHOES</p></div>
+                    <img src="imgs/fzb_03_wnf2.png">
+                </div>
+                <div class="index-middle21-right3">
+                    <div class="middle_r21C"><p>女王SHOES</p></div>
+                    <img src="imgs/fzb_07_zsig.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="index-middle22">
+            <div class="index-middle22-1">
+                <div class="index-middle22-1left">
+                    <p>走进某某鞋冒有限公司</p>
+                    <p>INTO A CERTAIN SHOE INDUSTRY</p>
+                    <p>CERTAIN SHOES​</p>
+                    <div style="line-height:33px">鞋帽有限公司创办于年经过十年来的艰辛创业，现已拥有占地面
+                        积多平方米的厂房，并引进了全套具有国际先进水准的鞋业生产
+                        线我公司主要生产旅游鞋皮鞋鞋底鞋底橡塑鞋底等系列产品，产
+                        品远销东南亚、欧美等地。秉持质优、高效的经营原则，我们将
+                        继续不懈努力，为广大客 商和消费者提供更优质的服务。
+                        <div style="height: 15px"></div>
+                        鞋帽有限公司系中国皮革工业协会的重点骨干企业。现有员工多
+                        人，标准厂房平方米，日产高档男女皮鞋多双。连续五届获得中
+                        国真皮鞋王，年率先在行内获质量管理体系认证。自年起连获国
+                        家免检产品资格，年被国家商务部列为重点培育和发展的中国出
+                        口名牌。某某鞋业，极限风潮，简约而不简单。</div>
+                </div>
+                <div class="index-middle22-1right">
+                    <div class="index-middle22-1rightT">
+                        <div class="EACH">
+                            <p>EACH PAIR IS THE</p>
+                            <p>MOST SPECIAL, JUST LIKE</p>
+                            <p>I CAN NOT BE</p>
+                            <p>REPLACED,</p>
+                            <p>I BELIEVE YOU WILL</p>
+                            <p>LIKE</p>
+                        </div>
+                        <div class="gongzhu">
+                            <p>每个女孩心中都住着一个公主，</p>
 
-                         <p>她青春，美好，</p>
+                            <p>她青春，美好，</p>
 
-                         <p>渴望被爱，潮流的绑带设计，</p>
+                            <p>渴望被爱，潮流的绑带设计，</p>
 
-                         <p>如月光下的剪影，少了一份甜美，</p>
+                            <p>如月光下的剪影，少了一份甜美，</p>
 
-                         <p>却多了一份神秘色彩，</p>
+                            <p>却多了一份神秘色彩，</p>
 
-                         <p>不知击中，</p>
+                            <p>不知击中，</p>
 
-                         <p>多少少女心颜值兼具实穿，</p>
+                            <p>多少少女心颜值兼具实穿，</p>
 
-                         <p>轻松演绎潮流时尚，</p>
-                     </div>
-                 </div>
-              </div>
-          </div>
-          <div class="index-middle22-2">
-              <div class="index-middle22-2-1">
-                  <div class="liaojie"><a href="product.html" style="color: #c36b81;font-size: 14px ">了解我们</a></div>
-                  <img src="imgs/phoneimg_03_0xa0.jpg">
-              </div>
-              <div class="index-middle22-2-2">
-              <img src="imgs/about_img_03_o61p.jpg">
-              </div>
-              <div class="index-middle22-2-2" style="margin-top: 30px">
-                  <div style="margin-top: 20px">
-                      <img src="imgs/phone_img_06_rjcl.jpg">
-                  </div>
-                  <div style="float: right;margin-top: 40px">
-                      <p>
-                      -----甜美优雅气质  夏天就要美美哒</p>
-                      <br>
-                      <img style="margin-top: 26px" src="imgs/phoneimg_09_xjw0.jpg">
-                      <br>
-                      <img style="margin-top: 20px" src="imgs/phoneimg_06_t42g.jpg">
-                  </div>
-              </div>
-              <div class="index-middle22-2-3">
-                  <div class="index-middle22-2-3left">
-                      <img src="imgs/phoneshow_03_spjn.jpg">
-                  </div>
-                  <div class="index-middle22-2-3right">
-                      <div> <div class="c23C"></div><img src="imgs/phoneshow_06_6dkx.jpg"></div>
-                      <div> <div class="c23C"></div><img src="imgs/phoneshow_08_nols.jpg"></div>
-                      <div> <div class="c23C"></div><img src="imgs/phoneshow_06_6dkx.jpg"></div>
-                      <div> <div class="c23C"></div><img src="imgs/phoneshow_08_nols.jpg"></div>
-                  </div>
+                            <p>轻松演绎潮流时尚，</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index-middle22-2">
+                <div class="index-middle22-2-1">
+                    <div class="liaojie"><a href="product.html" style="color: #c36b81;font-size: 14px ">了解我们</a></div>
+                    <img src="imgs/phoneimg_03_0xa0.jpg">
+                </div>
+                <div class="index-middle22-2-2">
+                    <img src="imgs/about_img_03_o61p.jpg">
+                    <div style="float: left;margin-top: 20px">
+                        <img src="imgs/phone_img_06_rjcl.jpg">
+                    </div>
 
-              </div>
-          </div>
-      </div>
+                    <div style="float: left;margin-top: 40px ;margin-left: 30px">
+                        <p style="font-size: 15px">
+                            -&#45;&#45;&#45;&#45;甜美优雅气质  夏天就要美美哒</p>
+                        <br>
+                        <img style="margin-top: 26px" src="imgs/phoneimg_09_xjw0.jpg">
+                        <br>
+                        <img style="margin-top: 20px" src="imgs/phoneimg_06_t42g.jpg">
+                    </div>
+                </div>
+
+                <div class="index-middle22-2-3">
+                    <div class="index-middle22-2-3left">
+                        <img src="imgs/phoneshow_03_spjn.jpg">
+                    </div>
+                    <div class="index-middle22-2-3right">
+                        <div> <div class="c23C"></div><img src="imgs/phoneshow_06_6dkx.jpg"></div>
+                        <div> <div class="c23C"></div><img src="imgs/phoneshow_08_nols.jpg"></div>
+                        <div> <div class="c23C"></div><img src="imgs/phoneshow_06_6dkx.jpg"></div>
+                        <div> <div class="c23C"></div><img src="imgs/phoneshow_08_nols.jpg"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
     <div class="index-foot-1"style="height: 500px">
         <div class="index-foot-1left">

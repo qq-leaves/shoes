@@ -1,4 +1,4 @@
-//ÂÖ²¥
+
 window.onload=function() {
     var times;
     var count = 0;
@@ -23,7 +23,7 @@ window.onload=function() {
         }
     };
 
-//µ¼º½
+
    /*   var lifo=document.getElementsByTagName('a');
      var s=document.getElementsByClassName('index-top-right')[0];
      document.getElementsByClassName ('index-top-right')[0].onmouseover=function(){
@@ -49,4 +49,4 @@ window.onload=function() {
         }
     }
 }
-//±íµ¥
+
